@@ -5,16 +5,14 @@ Toolkits to import, process and export data, including text, numbers, files, etc
 
 .. Package lists
 
-MSES-REMD
----------
-Multiscale enhanced replica exchange molecular dynamics
+REMD
+----
+Trajectory analysis of replica exchange molecular dynamics simulations.
 
-.. currentmodule:: msesremd
-.. autosummary:: 
+.. currentmodule:: xsimma.remd
+.. autosummary::
    :toctree: .
 
-   compute_emses
+   compute_rg
    compute_qcontacts
-   compute_ultrans
-   compute_nk
 

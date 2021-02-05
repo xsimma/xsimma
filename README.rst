@@ -1,4 +1,3 @@
-X-SimMa
-=======
-The engine of matter simulations
-
+xsimma
+======
+X-simulations of matters using Python

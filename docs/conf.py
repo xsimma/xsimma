@@ -16,7 +16,7 @@ import sys, os
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-sys.path.insert(0, os.path.abspath('../../xsimma/'))
+sys.path.insert(0, os.path.abspath('../../xsimma'))
 
 # -- General configuration -----------------------------------------------------
 
@@ -28,8 +28,10 @@ sys.path.insert(0, os.path.abspath('../../xsimma/'))
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
-    'sphinx.ext.napoleon',
     'sphinx.ext.autosummary',
+    'sphinx_rtd_theme',
+    'sphinx.ext.viewcode',
+    'numpydoc',
 ]
 autosummary_generate=True
 
@@ -98,8 +100,9 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#html_theme = 'sphinx_rth_theme'
-html_theme = 'default'
+#html_theme = 'default'
+import sphinx_rtd_theme
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
