@@ -15,4 +15,6 @@ Trajectory analysis of replica exchange molecular dynamics simulations.
 
    compute_rg
    compute_qcontacts
+   plttimeseries
+   plthist
 
