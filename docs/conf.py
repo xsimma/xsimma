@@ -30,8 +30,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.autosummary',
     'sphinx_rtd_theme',
-    'sphinx.ext.viewcode',
-    'numpydoc',
+    'sphinx.ext.napoleon',
 ]
 autosummary_generate=True
 

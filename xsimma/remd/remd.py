@@ -43,7 +43,7 @@ def compute_rg(traj, atomsinx=None, masses=None):
     -----
     Suppose a molecular confiration consists of particles and the coordinate and
     effective mass of :math:`k^{th}` particle are :math:`x_{k}` and :math:`mass_{k}`, respectively,
-    then the square of radius of gyration can be written as,
+    then the square of radius of gyration can be written as, [1]_
 
     .. math::
         R_{g}^{2}(m,x) = \sum_{k}m_{k}(x_{k}-\sum_{k}m_{k}x_{k})^{2}
@@ -161,7 +161,7 @@ def compute_qcontacts(traj, reference, pairs, beta=50, gamma=1.8, epsilon=0.0):
     Given a trajectory (x), the number of native contacts is defined as, [1]_
 
     .. math::
-        Q(x) = \sum_{(i,j)} 1/(1+e^{\beta [r_{ij}(x) - \lambda * r_{ij}^{0} - \epsilon ]}),
+        Q(x) = \sum_{(i,j)} 1 / (1+e^{\beta [r_{ij}(x) - \lambda * r_{ij}^{0} - \epsilon ]}),
 
     where the sum loops over the M pairs of native contacts,
     :math:`r_{ij}(x)` is the distance (unit: nm)
@@ -176,9 +176,9 @@ def compute_qcontacts(traj, reference, pairs, beta=50, gamma=1.8, epsilon=0.0):
     References
     ----------
     .. [1] Best, R. B., Hummer, G., & Eaton, W. A. (2013),
-    Native contacts determine protein folding mechanisms in atomistic simulations.
-    Proceedings of the National Academy of Sciences, 110(44), 17874-17879.
-    Link: https://www.pnas.org/content/110/44/17874
+        Native contacts determine protein folding mechanisms in atomistic simulations.
+        Proceedings of the National Academy of Sciences, 110(44), 17874-17879.
+        Link: https://www.pnas.org/content/110/44/17874
 
     Examples
     --------
